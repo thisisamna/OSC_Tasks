@@ -26,8 +26,7 @@ do
 
             ;;
         4)
-            echo -n "$num1 / $num2 = "
-            echo "$num1/$num2" | bc -l 
+            echo "$num1 / $num2 = $(( $num1/$num2))" 
             ;;
         *)
             echo "Please select a number from the list."
